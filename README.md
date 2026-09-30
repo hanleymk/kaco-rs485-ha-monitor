@@ -16,6 +16,11 @@ inaccessible. Rather than depend on that logger at all, this polls the
 inverter directly over its RS485 service bus, using KACO's own documented
 ASCII protocol.
 
+Data is fed into the Home Assistant Energy dashboard via MQTT.
+
+<img width="1086" height="715" alt="image" src="https://github.com/user-attachments/assets/1e5c03e4-4097-4646-b656-35ef520655ec" />
+
+
 ## Is this for you?
 
 This should work for the whole KACO **"02xi" family**: 1502xi, 2502xi,
