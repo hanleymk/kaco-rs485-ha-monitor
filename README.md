@@ -1,5 +1,8 @@
 # KACO RS485 Home Assistant Monitor
 
+I described this project in a LinkedIn article here: 
+https://www.linkedin.com/pulse/data-monitoring-my-obsolete-solar-installation-via-claude-mark-hanley-fgdef/
+
 Local, cloud-free solar production monitoring for older KACO "02xi"-series
 string inverters — for when the manufacturer's cloud monitoring portal has
 died, been discontinued, or changed hands and dropped support for your
