@@ -1,0 +1,22 @@
+name: "KACO Inverter Monitor"
+version: "1.1.0"
+slug: "kaco_monitor"
+description: "Polls a KACO 02xi-series inverter (1502xi/2502xi/3502xi/5002xi) over RS485/Ethernet and publishes readings to MQTT/Home Assistant"
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: application
+boot: auto
+options:
+  inverter_port: "socket://192.168.1.50:8899"
+  inverter_address: 1
+  inverter_model: "blueplanet 5002xi"
+  poll_interval: 30
+schema:
+  inverter_port: "str"
+  inverter_address: "int(1,32)"
+  inverter_model: "str"
+  poll_interval: "int(1,300)"
+services:
+  - "mqtt:want"
